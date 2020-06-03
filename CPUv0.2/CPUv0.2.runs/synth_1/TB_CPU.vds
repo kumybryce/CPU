@@ -1,0 +1,666 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jun  2 17:22:36 2020
+# Process ID: 7932
+# Current directory: D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.runs/synth_1
+# Command line: vivado.exe -log TB_CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TB_CPU.tcl
+# Log file: D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.runs/synth_1/TB_CPU.vds
+# Journal file: D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TB_CPU.tcl -notrace
+Command: synth_design -top TB_CPU -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18980 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 403.531 ; gain = 100.168
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TB_CPU' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/TB_CPU.v:23]
+INFO: [Synth 8-638] synthesizing module 'DIVIDER' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/DIVIDER.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DIVIDER' (1#1) [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/DIVIDER.v:23]
+INFO: [Synth 8-638] synthesizing module 'cpu' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:23]
+INFO: [Synth 8-638] synthesizing module 'MBR' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/MBR.v:23]
+WARNING: [Synth 8-5788] Register MBR_to_IR_reg in module MBR is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/MBR.v:52]
+WARNING: [Synth 8-5788] Register MBR_to_MAR_reg in module MBR is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/MBR.v:54]
+WARNING: [Synth 8-5788] Register MBR_to_BR_reg in module MBR is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/MBR.v:56]
+WARNING: [Synth 8-5788] Register MBR_to_RAM_reg in module MBR is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/MBR.v:58]
+WARNING: [Synth 8-5788] Register MBR_to_PC_reg in module MBR is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/MBR.v:60]
+WARNING: [Synth 8-3848] Net MBR_to_ACC in module/entity MBR does not have driver. [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/MBR.v:33]
+INFO: [Synth 8-256] done synthesizing module 'MBR' (2#1) [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/MBR.v:23]
+INFO: [Synth 8-638] synthesizing module 'MAR' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/MAR.v:23]
+WARNING: [Synth 8-5788] Register MAR_to_RAM_reg in module MAR is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/MAR.v:45]
+INFO: [Synth 8-256] done synthesizing module 'MAR' (3#1) [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/MAR.v:23]
+INFO: [Synth 8-638] synthesizing module 'PC' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/PC.v:23]
+WARNING: [Synth 8-5788] Register PC_to_MBR_reg in module PC is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/PC.v:44]
+INFO: [Synth 8-256] done synthesizing module 'PC' (4#1) [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-638] synthesizing module 'BR' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/BR.v:23]
+INFO: [Synth 8-256] done synthesizing module 'BR' (5#1) [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/BR.v:23]
+INFO: [Synth 8-638] synthesizing module 'IR' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/IR.v:23]
+WARNING: [Synth 8-6014] Unused sequential element IR_reg_reg was removed.  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/IR.v:35]
+WARNING: [Synth 8-5788] Register IR_to_CU_reg in module IR is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/IR.v:42]
+INFO: [Synth 8-256] done synthesizing module 'IR' (6#1) [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-638] synthesizing module 'AC' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/AC.v:23]
+INFO: [Synth 8-256] done synthesizing module 'AC' (7#1) [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/AC.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-6014] Unused sequential element alu_reg was removed.  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/ALU.v:69]
+WARNING: [Synth 8-5788] Register mult_reg in module ALU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/ALU.v:87]
+WARNING: [Synth 8-5788] Register MR_reg in module ALU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/ALU.v:93]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (8#1) [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'CU' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/CU.v:23]
+INFO: [Synth 8-638] synthesizing module 'CAR' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/CAR.v:23]
+	Parameter FETCH bound to: 8'b00000000 
+	Parameter STORE bound to: 8'b00000001 
+	Parameter LOAD bound to: 8'b00000010 
+	Parameter ADD bound to: 8'b00000011 
+	Parameter SUB bound to: 8'b00000100 
+	Parameter JMPGEZ bound to: 8'b00000101 
+	Parameter JMP bound to: 8'b00000110 
+	Parameter HALT bound to: 8'b00000111 
+	Parameter MPY bound to: 8'b00001000 
+	Parameter AND bound to: 8'b00001010 
+	Parameter OR bound to: 8'b00001011 
+	Parameter NOT bound to: 8'b00001100 
+	Parameter SHR bound to: 8'b00001101 
+	Parameter SHL bound to: 8'b00001110 
+INFO: [Synth 8-256] done synthesizing module 'CAR' (9#1) [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/CAR.v:23]
+INFO: [Synth 8-638] synthesizing module 'CM' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.runs/synth_1/.Xil/Vivado-7932-DESKTOP-F841VHB/realtime/CM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'CM' (10#1) [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.runs/synth_1/.Xil/Vivado-7932-DESKTOP-F841VHB/realtime/CM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'CU' (11#1) [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/CU.v:23]
+WARNING: [Synth 8-3848] Net CPU_to_RAM_D in module/entity cpu does not have driver. [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:29]
+WARNING: [Synth 8-3848] Net CPU_to_RAM_A in module/entity cpu does not have driver. [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:30]
+WARNING: [Synth 8-3848] Net MBR_from_RAM in module/entity cpu does not have driver. [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:34]
+INFO: [Synth 8-256] done synthesizing module 'cpu' (12#1) [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'CPU_from_RAM_D' does not match port width (16) of module 'cpu' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/TB_CPU.v:43]
+WARNING: [Synth 8-689] width (1) of port connection 'CPU_to_RAM_D' does not match port width (16) of module 'cpu' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/TB_CPU.v:45]
+WARNING: [Synth 8-689] width (1) of port connection 'CPU_to_RAM_A' does not match port width (8) of module 'cpu' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/TB_CPU.v:46]
+INFO: [Synth 8-638] synthesizing module 'RAM' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.runs/synth_1/.Xil/Vivado-7932-DESKTOP-F841VHB/realtime/RAM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (13#1) [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.runs/synth_1/.Xil/Vivado-7932-DESKTOP-F841VHB/realtime/RAM_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 'addra' does not match port width (8) of module 'RAM' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/TB_CPU.v:53]
+WARNING: [Synth 8-689] width (1) of port connection 'dina' does not match port width (16) of module 'RAM' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/TB_CPU.v:54]
+WARNING: [Synth 8-689] width (1) of port connection 'douta' does not match port width (16) of module 'RAM' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/TB_CPU.v:55]
+INFO: [Synth 8-256] done synthesizing module 'TB_CPU' (14#1) [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/TB_CPU.v:23]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[31]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[30]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[29]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[28]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[27]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[26]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[25]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[24]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[23]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[22]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[21]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[20]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[19]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[18]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[17]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[16]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[15]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[14]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[13]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[12]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[11]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[10]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[9]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[8]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[7]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[6]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[5]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[4]
+WARNING: [Synth 8-3331] design CAR has unconnected port c[3]
+WARNING: [Synth 8-3331] design CAR has unconnected port flag[7]
+WARNING: [Synth 8-3331] design CAR has unconnected port flag[6]
+WARNING: [Synth 8-3331] design CAR has unconnected port flag[5]
+WARNING: [Synth 8-3331] design CAR has unconnected port flag[4]
+WARNING: [Synth 8-3331] design CAR has unconnected port flag[3]
+WARNING: [Synth 8-3331] design CAR has unconnected port flag[2]
+WARNING: [Synth 8-3331] design CAR has unconnected port flag[1]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[31]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[30]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[29]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[23]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[22]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[21]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[15]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[14]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[13]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[12]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[11]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[10]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[8]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[7]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[6]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[5]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[4]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[3]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[2]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[1]
+WARNING: [Synth 8-3331] design ALU has unconnected port c[0]
+WARNING: [Synth 8-3331] design AC has unconnected port c[31]
+WARNING: [Synth 8-3331] design AC has unconnected port c[30]
+WARNING: [Synth 8-3331] design AC has unconnected port c[28]
+WARNING: [Synth 8-3331] design AC has unconnected port c[27]
+WARNING: [Synth 8-3331] design AC has unconnected port c[26]
+WARNING: [Synth 8-3331] design AC has unconnected port c[25]
+WARNING: [Synth 8-3331] design AC has unconnected port c[24]
+WARNING: [Synth 8-3331] design AC has unconnected port c[23]
+WARNING: [Synth 8-3331] design AC has unconnected port c[22]
+WARNING: [Synth 8-3331] design AC has unconnected port c[20]
+WARNING: [Synth 8-3331] design AC has unconnected port c[19]
+WARNING: [Synth 8-3331] design AC has unconnected port c[18]
+WARNING: [Synth 8-3331] design AC has unconnected port c[17]
+WARNING: [Synth 8-3331] design AC has unconnected port c[16]
+WARNING: [Synth 8-3331] design AC has unconnected port c[15]
+WARNING: [Synth 8-3331] design AC has unconnected port c[14]
+WARNING: [Synth 8-3331] design AC has unconnected port c[13]
+WARNING: [Synth 8-3331] design AC has unconnected port c[12]
+WARNING: [Synth 8-3331] design AC has unconnected port c[11]
+WARNING: [Synth 8-3331] design AC has unconnected port c[10]
+WARNING: [Synth 8-3331] design AC has unconnected port c[9]
+WARNING: [Synth 8-3331] design AC has unconnected port c[7]
+WARNING: [Synth 8-3331] design AC has unconnected port c[6]
+WARNING: [Synth 8-3331] design AC has unconnected port c[5]
+WARNING: [Synth 8-3331] design AC has unconnected port c[4]
+WARNING: [Synth 8-3331] design AC has unconnected port c[3]
+WARNING: [Synth 8-3331] design AC has unconnected port c[2]
+WARNING: [Synth 8-3331] design AC has unconnected port c[1]
+WARNING: [Synth 8-3331] design AC has unconnected port c[0]
+WARNING: [Synth 8-3331] design IR has unconnected port c[31]
+WARNING: [Synth 8-3331] design IR has unconnected port c[30]
+WARNING: [Synth 8-3331] design IR has unconnected port c[29]
+WARNING: [Synth 8-3331] design IR has unconnected port c[28]
+WARNING: [Synth 8-3331] design IR has unconnected port c[27]
+WARNING: [Synth 8-3331] design IR has unconnected port c[26]
+WARNING: [Synth 8-3331] design IR has unconnected port c[25]
+WARNING: [Synth 8-3331] design IR has unconnected port c[24]
+WARNING: [Synth 8-3331] design IR has unconnected port c[23]
+WARNING: [Synth 8-3331] design IR has unconnected port c[22]
+WARNING: [Synth 8-3331] design IR has unconnected port c[21]
+WARNING: [Synth 8-3331] design IR has unconnected port c[20]
+WARNING: [Synth 8-3331] design IR has unconnected port c[19]
+WARNING: [Synth 8-3331] design IR has unconnected port c[18]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 455.660 ; gain = 152.297
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin mbr:MBR_from_RAM[15] to constant 0 [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:77]
+WARNING: [Synth 8-3295] tying undriven pin mbr:MBR_from_RAM[14] to constant 0 [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:77]
+WARNING: [Synth 8-3295] tying undriven pin mbr:MBR_from_RAM[13] to constant 0 [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:77]
+WARNING: [Synth 8-3295] tying undriven pin mbr:MBR_from_RAM[12] to constant 0 [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:77]
+WARNING: [Synth 8-3295] tying undriven pin mbr:MBR_from_RAM[11] to constant 0 [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:77]
+WARNING: [Synth 8-3295] tying undriven pin mbr:MBR_from_RAM[10] to constant 0 [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:77]
+WARNING: [Synth 8-3295] tying undriven pin mbr:MBR_from_RAM[9] to constant 0 [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:77]
+WARNING: [Synth 8-3295] tying undriven pin mbr:MBR_from_RAM[8] to constant 0 [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:77]
+WARNING: [Synth 8-3295] tying undriven pin mbr:MBR_from_RAM[7] to constant 0 [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:77]
+WARNING: [Synth 8-3295] tying undriven pin mbr:MBR_from_RAM[6] to constant 0 [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:77]
+WARNING: [Synth 8-3295] tying undriven pin mbr:MBR_from_RAM[5] to constant 0 [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:77]
+WARNING: [Synth 8-3295] tying undriven pin mbr:MBR_from_RAM[4] to constant 0 [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:77]
+WARNING: [Synth 8-3295] tying undriven pin mbr:MBR_from_RAM[3] to constant 0 [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:77]
+WARNING: [Synth 8-3295] tying undriven pin mbr:MBR_from_RAM[2] to constant 0 [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:77]
+WARNING: [Synth 8-3295] tying undriven pin mbr:MBR_from_RAM[1] to constant 0 [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:77]
+WARNING: [Synth 8-3295] tying undriven pin mbr:MBR_from_RAM[0] to constant 0 [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/cpu.v:77]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 455.660 ; gain = 152.297
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.runs/synth_1/.Xil/Vivado-7932-DESKTOP-F841VHB/dcp2/RAM_in_context.xdc] for cell 'ram'
+Finished Parsing XDC File [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.runs/synth_1/.Xil/Vivado-7932-DESKTOP-F841VHB/dcp2/RAM_in_context.xdc] for cell 'ram'
+Parsing XDC File [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.runs/synth_1/.Xil/Vivado-7932-DESKTOP-F841VHB/dcp3/CM_in_context.xdc] for cell 'tb_cpu/cu/cm'
+Finished Parsing XDC File [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.runs/synth_1/.Xil/Vivado-7932-DESKTOP-F841VHB/dcp3/CM_in_context.xdc] for cell 'tb_cpu/cu/cm'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 795.398 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 795.398 ; gain = 492.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 795.398 ; gain = 492.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for tb_cpu/cu/cm. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 795.398 ; gain = 492.035
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/DIVIDER.v:30]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg_reg was removed.  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/PC.v:36]
+INFO: [Synth 8-4471] merging register 'address_out_reg[7:0]' into 'address_reg[7:0]' [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/CAR.v:59]
+WARNING: [Synth 8-6014] Unused sequential element address_out_reg was removed.  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/CAR.v:59]
+WARNING: [Synth 8-6014] Unused sequential element address_reg was removed.  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/CAR.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 795.398 ; gain = 492.035
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	               16 Bit    Wide XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 8     
+	                8 Bit    Registers := 11    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	  10 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DIVIDER 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module MBR 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+Module MAR 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module BR 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+Module IR 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module AC 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
++---XORs : 
+	               16 Bit    Wide XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
++---Muxes : 
+	  10 Input      1 Bit        Muxes := 1     
+Module CAR 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element tb_cpu/mbr/MBR_to_PC_reg was removed.  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/MBR.v:60]
+WARNING: [Synth 8-6014] Unused sequential element tb_cpu/mbr/MBR_to_MAR_reg was removed.  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/MBR.v:54]
+WARNING: [Synth 8-6014] Unused sequential element tb_cpu/mbr/MBR_to_RAM_reg was removed.  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/MBR.v:58]
+WARNING: [Synth 8-6014] Unused sequential element tb_cpu/mar/MAR_reg_reg was removed.  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/MAR.v:36]
+WARNING: [Synth 8-6014] Unused sequential element tb_cpu/mar/MAR_to_RAM_reg was removed.  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/MAR.v:45]
+WARNING: [Synth 8-6014] Unused sequential element tb_cpu/pc/PC_to_MAR_reg was removed.  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/PC.v:37]
+WARNING: [Synth 8-6014] Unused sequential element tb_cpu/pc/PC_to_MBR_reg was removed.  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/PC.v:44]
+WARNING: [Synth 8-6014] Unused sequential element tb_cpu/alu/MR_reg was removed.  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/ALU.v:93]
+WARNING: [Synth 8-6014] Unused sequential element tb_cpu/pc/PC_reg_reg was removed.  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/PC.v:36]
+WARNING: [Synth 8-6014] Unused sequential element div/count_reg was removed.  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/DIVIDER.v:30]
+WARNING: [Synth 8-6014] Unused sequential element tb_cpu/cu/car/address_reg was removed.  [D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.srcs/sources_1/new/CAR.v:58]
+DSP Report: Generating DSP tb_cpu/alu/mult0, operation Mode is: A2*B.
+DSP Report: register tb_cpu/ac/ACC_out_reg is absorbed into DSP tb_cpu/alu/mult0.
+DSP Report: operator tb_cpu/alu/mult0 is absorbed into DSP tb_cpu/alu/mult0.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[31]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[30]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[29]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[28]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[27]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[26]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[25]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[24]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[23]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[22]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[21]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[20]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[19]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[18]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[17]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[16]) is unused and will be removed from module TB_CPU.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 795.398 ; gain = 492.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|TB_CPU      | A2*B        | 16     | 16     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 836.199 ; gain = 532.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 836.199 ; gain = 532.836
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_reg_reg[15]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_reg_reg[14]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_reg_reg[13]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_reg_reg[12]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_reg_reg[11]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_reg_reg[10]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_reg_reg[9]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_reg_reg[8]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_reg_reg[7]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_reg_reg[6]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_reg_reg[5]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_reg_reg[4]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_reg_reg[3]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_reg_reg[2]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_reg_reg[1]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_reg_reg[0]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_to_BR_reg[15]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_to_BR_reg[14]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_to_BR_reg[13]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_to_BR_reg[12]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_to_BR_reg[11]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_to_BR_reg[10]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_to_BR_reg[9]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_to_BR_reg[8]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_to_BR_reg[7]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_to_BR_reg[6]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_to_BR_reg[5]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_to_BR_reg[4]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_to_BR_reg[3]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_to_BR_reg[2]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_to_BR_reg[1]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/mbr/MBR_to_BR_reg[0]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_reg_reg[15]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_reg_reg[14]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_reg_reg[13]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_reg_reg[12]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_reg_reg[11]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_reg_reg[10]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_reg_reg[9]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_reg_reg[8]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_reg_reg[7]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_reg_reg[6]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_reg_reg[5]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_reg_reg[4]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_reg_reg[3]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_reg_reg[2]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_reg_reg[1]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_reg_reg[0]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_to_ALU_reg[15]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_to_ALU_reg[14]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_to_ALU_reg[13]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_to_ALU_reg[12]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_to_ALU_reg[11]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_to_ALU_reg[10]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_to_ALU_reg[9]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_to_ALU_reg[8]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_to_ALU_reg[7]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_to_ALU_reg[6]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_to_ALU_reg[5]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_to_ALU_reg[4]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_to_ALU_reg[3]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_to_ALU_reg[2]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_to_ALU_reg[1]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/br/BR_to_ALU_reg[0]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[15]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[14]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[13]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[12]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[11]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[10]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[9]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[8]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[7]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[6]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[5]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[4]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[3]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[2]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[1]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/mult_reg[0]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/ALU_out_reg[15]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/ALU_out_reg[14]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/ALU_out_reg[13]) is unused and will be removed from module TB_CPU.
+WARNING: [Synth 8-3332] Sequential element (tb_cpu/alu/ALU_out_reg[12]) is unused and will be removed from module TB_CPU.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 855.656 ; gain = 552.293
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 855.656 ; gain = 552.293
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 855.656 ; gain = 552.293
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 855.656 ; gain = 552.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 855.656 ; gain = 552.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 855.656 ; gain = 552.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 855.656 ; gain = 552.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |RAM           |         1|
+|2     |CM            |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |CM   |     1|
+|2     |RAM  |     1|
+|3     |BUFG |     1|
+|4     |LUT1 |     1|
+|5     |LUT2 |     1|
+|6     |LUT3 |     2|
+|7     |LUT4 |     8|
+|8     |LUT5 |     4|
+|9     |LUT6 |     2|
+|10    |FDCE |     8|
+|11    |FDRE |     5|
+|12    |IBUF |     2|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------+--------+------+
+|      |Instance  |Module  |Cells |
++------+----------+--------+------+
+|1     |top       |        |    82|
+|2     |  div     |DIVIDER |    10|
+|3     |  tb_cpu  |cpu     |    53|
+|4     |    cu    |CU      |    53|
+|5     |      car |CAR     |    21|
++------+----------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 855.656 ; gain = 552.293
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 160 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 855.656 ; gain = 212.555
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 855.656 ; gain = 552.293
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 253 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 855.656 ; gain = 563.762
+INFO: [Common 17-1381] The checkpoint 'D:/2_/1_/1/ours/CPUv0.2/CPUv0.2.runs/synth_1/TB_CPU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TB_CPU_utilization_synth.rpt -pb TB_CPU_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 855.656 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  2 17:23:16 2020...
